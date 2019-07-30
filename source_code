@@ -1,0 +1,18 @@
+#solution 1 using function
+def reverse(x):
+  return x[::-1]
+
+firstName = input("Please enter your first name: ")
+
+lastName = input("Please enter your last name: ")
+
+print("Hello",firstName, lastName + "!")
+print("Your name spelled backwards is" + " " + reverse(firstName)+ " "+ reverse(lastName))
+
+
+
+#solution 2 using split
+name = input("Enter your first & last name: ")
+
+first, last = name.split()
+print(first[::-1], last[::-1])
